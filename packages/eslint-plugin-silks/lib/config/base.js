@@ -15,17 +15,18 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-vue": "^8.2.0"
+    "eslint-plugin-vue": "^8.2.0",
+    "typescript": "^4.5.4"
   
  *
  */
 
-const common = require("../rules/common.js");
+var common = require('../rules/common.js')
 
 module.exports = {
-  parser: "@babel/eslint-parser",
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 6,
   },
   rules: Object.assign({}, common),
-};
+}

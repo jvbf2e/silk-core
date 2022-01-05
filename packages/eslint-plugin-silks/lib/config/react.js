@@ -15,19 +15,20 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-vue": "^8.2.0"
+    "eslint-plugin-vue": "^8.2.0",
+    "typescript": "^4.5.4"
   
  *
  */
 
-const react = require("../rules/react-common.js");
-const reactHooks = require("../rules/react-hooks-common.js");
+var react = require('../rules/react-common.js')
+var reactHooks = require('../rules/react-hooks-common.js')
 
 module.exports = {
-  extends: ["./base.js", "./typescript.js"],
+  extends: [require.resolve('./base'), require.resolve('./typescript')],
   parserOptions: {
     ecmaVersion: 6,
   },
-  plugins: ["react", "react-hooks"],
+  plugins: ['react', 'react-hooks'],
   rules: Object.assign({}, react, reactHooks),
-};
+}

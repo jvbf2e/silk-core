@@ -15,11 +15,12 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-vue": "^8.2.0"
+    "eslint-plugin-vue": "^8.2.0",
+    "typescript": "^4.5.4"
   
  *
  */
 
 module.exports = {
-  extends: ["./base.js"],
-};
+  extends: [require.resolve('./base')],
+}

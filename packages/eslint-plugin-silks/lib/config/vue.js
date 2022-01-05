@@ -15,12 +15,13 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-vue": "^8.2.0"
+    "eslint-plugin-vue": "^8.2.0",
+    "typescript": "^4.5.4"
   
  *
  */
 
-const vueRules = require("../rules/vue-common.js");
+var vueRules = require('../rules/vue-common.js')
 
 module.exports = {
   root: true,
@@ -28,15 +29,15 @@ module.exports = {
     node: true,
   },
   extends: [
-    "plugin:vue/essential",
-    "@vue/standard",
-    "@vue/typescript/recommended",
-    "./base.js",
-    "./typescript.js",
+    'plugin:vue/essential',
+    '@vue/standard',
+    '@vue/typescript/recommended',
+    require.resolve('./base'),
+    require.resolve('./typescript'),
   ],
   parserOptions: {
     ecmaVersion: 2019,
   },
-  plugins: ["vue"],
+  plugins: ['vue'],
   rules: Object.assign({}, vueRules),
-};
+}

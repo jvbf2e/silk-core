@@ -1,3 +1,1 @@
-module.exports = {
-  extends: ['plugin:silks/vue'],
-}
+module.exports = {}

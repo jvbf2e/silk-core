@@ -15,18 +15,19 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-vue": "^8.2.0"
+    "eslint-plugin-vue": "^8.2.0",
+    "typescript": "^4.5.4"
   
  *
  */
 
-const typescriptRule = require("../rules/typescript-common.js");
+var typescriptRule = require('../rules/typescript-common.js')
 
 module.exports = {
   parserOptions: {
     ecmaVersion: 6,
   },
-  parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
   rules: Object.assign({}, typescriptRule),
-};
+}
