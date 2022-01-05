@@ -13,6 +13,7 @@
   "dependencies": {
     "commitlint-config-silks": "workspace:^0.0.1",
     "eslint-plugin-silks": "workspace:^0.0.2",
+    "prettier-config-silks": "workspace:^1.0.0",
     "stylelint-config-silks": "workspace:^0.0.1"
   }
 }

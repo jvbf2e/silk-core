@@ -1,0 +1,17 @@
+{
+  "name": "prettier-config-silks",
+  "version": "1.0.0",
+  "description": "prettier config base version",
+  "keywords": [
+    "prettier"
+  ],
+  "main": "index.js",
+  "author": "Jvb",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prettier": "^2.5.1"
+  }
+}
