@@ -1,0 +1,26 @@
+{
+  "name": "commitlint-config-silks",
+  "version": "0.0.1",
+  "description": "commitlint config base version",
+  "main": "index.js",
+  "keywords": [
+    "commitlint"
+  ],
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "author": "Jvb",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvbf2e/silk-core.git"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0"
+  }
+}

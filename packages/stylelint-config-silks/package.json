@@ -1,0 +1,26 @@
+{
+  "name": "stylelint-config-silks",
+  "version": "0.0.1",
+  "description": "stylelint config base version",
+  "keywords": [
+    "stylelint"
+  ],
+  "author": "Jvb",
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvbf2e/silk-core.git"
+  },
+  "scripts": {
+    "test": "stylelint test"
+  },
+  "dependencies": {
+    "stylelint": "^14.2.0",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0"
+  }
+}
